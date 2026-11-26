@@ -24,7 +24,7 @@ cd TimeLeft
 ./scripts/build.sh
 ```
 
-构建脚本会生成带本地签名的 `dist/TimeLeft.app`。在 Finder 中将它拖到「应用程序」，双击后从菜单栏的时钟图标打开。更新时先退出 TimeLeft，再替换原位置的应用。
+构建脚本会生成带本地签名的 `dist.noindex/TimeLeft.app`。构建目录避开 Spotlight 索引，避免搜索时重复显示。在 Finder 中将应用拖到「应用程序」，双击后从菜单栏的时钟图标打开。更新时先退出 TimeLeft，再替换原位置的应用。
 
 ## 实现
 

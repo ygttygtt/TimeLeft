@@ -4,7 +4,7 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 swift build -c release
 bin_dir="$(swift build -c release --show-bin-path)"
-app="$PWD/dist/TimeLeft.app"
+app="$PWD/dist.noindex/TimeLeft.app"
 
 icon_dir="$(mktemp -d)"
 iconset="$icon_dir/AppIcon.iconset"
